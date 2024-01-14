@@ -1,0 +1,6 @@
+databaseChangeLog:
+
+    # Initial schema including
+    -   include:
+            file: create-schema.yml
+            relativeToChangelogFile: true

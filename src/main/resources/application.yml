@@ -1,0 +1,44 @@
+server:
+    port: 8080
+logging:
+    pattern:
+        console: |
+            {"timestamp": "%d{yyyy-MM-dd HH:mm:ss.SSS}","level": "%p","thread": "%t","clazz": "%logger{36}","transactionId": "%X{X-Trace-Id}","payload": %msg}
+        file: |
+            {"timestamp": "%d{yyyy-MM-dd HH:mm:ss.SSS}","level": "%p","thread": "%t","clazz": "%logger{36}","transactionId": "%X{X-Trace-Id}","payload": %msg}
+    level:
+        root: INFO
+        org.springframework.data.r2dbc: INFO
+    file:
+        name: log.log
+
+spring:
+    codec:
+        max-in-memory-size: 10MB
+    data:
+        r2dbc:
+            repositories:
+                enabled: true
+    r2dbc:
+        url: r2dbc:h2:mem:///inditexdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        name: inditexdb
+        password:
+        username: sa
+
+
+
+    # Liquibase (schema update)
+    liquibase:
+        change-log: classpath:/db/db.changelog.yml
+        url: jdbc:h2:mem:inditexdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+        user: sa
+        password:
+        drop-first: true
+
+
+    h2:
+        console.enabled: true
+api:
+    url: https://jsonplaceholder.typicode.com
+    albums-endpoint: /albums
+    photos-endpoint: /photos

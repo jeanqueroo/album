@@ -1,0 +1,81 @@
+databaseChangeLog:
+    - changeSet:
+          id: create-album-table
+          author: jquero
+          changes:
+              - createTable:
+                    schema: public
+                    tableName: ALBUM
+                    columns:
+                        - column:
+                              name: ID
+                              type: int
+                              constraints:
+                                  primaryKey: true
+                                  nullable: false
+                        - column:
+                              name: USER_ID
+                              type: int
+                              constraints:
+                                  nullable: false
+                        - column:
+                              name: TITLE
+                              type: varchar(250)
+                              constraints:
+                                  nullable: false
+                        - column:
+                              name: CREATE_BY
+                              type: varchar(10)
+                              constraints:
+                                  nullable: false
+                        - column:
+                              name: CREATE_AT
+                              type: timestamp
+                              defaultValueComputed: CURRENT_TIMESTAMP
+                              constraints:
+                                  nullable: false
+    - changeSet:
+          id: create-photo-table
+          author: jquero
+          changes:
+              - createTable:
+                    schema: public
+                    tableName: PHOTO
+                    columns:
+                        - column:
+                              name: ID
+                              type: int
+                              constraints:
+                                    primaryKey: true
+                                    nullable: false
+                        -   column:
+                                name: ALBUM_ID
+                                type: int
+                                constraints:
+                                    nullable: false
+                        -   column:
+                                name: TITLE
+                                type: varchar(250)
+                                constraints:
+                                    nullable: false
+                        -   column:
+                                name: URL
+                                type: varchar(250)
+                                constraints:
+                                    nullable: false
+                        -   column:
+                                name: THUMBAIL_URL
+                                type: varchar(250)
+                                constraints:
+                                    nullable: false
+                        -   column:
+                                name: CREATE_BY
+                                type: varchar(10)
+                                constraints:
+                                    nullable: false
+                        -   column:
+                                name: CREATE_AT
+                                type: timestamp
+                                defaultValueComputed: CURRENT_TIMESTAMP
+                                constraints:
+                                    nullable: false

@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+    album-rest:
+        image: album-rest:1.0
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                jar: album-0.0.1-SNAPSHOT.jar
+        ports:
+            - "8080:8080"
