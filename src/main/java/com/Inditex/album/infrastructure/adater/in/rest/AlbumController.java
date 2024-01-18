@@ -1,8 +1,8 @@
-package com.Inditex.album.infrastructure.adater.in.rest;
+package com.inditex.album.infrastructure.adater.in.rest;
 
-import com.Inditex.album.app.services.AlbumCommand;
-import com.Inditex.album.domain.model.AlbumApiDTO;
-import com.Inditex.album.domain.model.AlbumDTO;
+import com.inditex.album.app.services.AlbumCommand;
+import com.inditex.album.domain.model.AlbumApiDTO;
+import com.inditex.album.domain.model.AlbumDTO;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.Inditex.album.infrastructure.entities;
+package com.inditex.album.infrastructure.entities;
 
 import lombok.*;
 import org.springframework.data.domain.Persistable;
@@ -33,7 +33,7 @@ public class PhotoEntity implements Persistable<Integer> {
 
     // when is created.
     @Column("CREATE_BY")
-    private String createby;
+    private String createBy;
 
     @Override
     public boolean isNew() {

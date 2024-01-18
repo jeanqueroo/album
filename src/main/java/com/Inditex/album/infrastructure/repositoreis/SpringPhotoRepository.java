@@ -1,6 +1,6 @@
-package com.Inditex.album.infrastructure.repositoreis;
+package com.inditex.album.infrastructure.repositoreis;
 
-import com.Inditex.album.infrastructure.entities.PhotoEntity;
+import com.inditex.album.infrastructure.entities.PhotoEntity;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import reactor.core.publisher.Flux;

@@ -1,4 +1,4 @@
-package com.Inditex.album.app.exception;
+package com.inditex.album.app.exception;
 
 public enum ErrorCode {
     

@@ -1,4 +1,4 @@
-package com.Inditex.album.domain.model;
+package com.inditex.album.domain.model;
 
 import lombok.*;
 import java.time.LocalDateTime;
@@ -16,5 +16,5 @@ public class PhotoDTO {
     private String thumbnailUrl;
     private String title;
     private LocalDateTime createAt;
-    private String createby;
+    private String createBy;
 }

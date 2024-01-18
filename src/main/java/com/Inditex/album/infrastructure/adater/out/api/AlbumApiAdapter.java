@@ -1,9 +1,9 @@
-package com.Inditex.album.infrastructure.adater.out.api;
+package com.inditex.album.infrastructure.adater.out.api;
 
-import com.Inditex.album.domain.mapper.AlbumMapper;
-import com.Inditex.album.domain.model.AlbumApiDTO;
-import com.Inditex.album.domain.port.out.AlbumApiPort;
-import com.Inditex.album.infrastructure.api.AlbumApiRest;
+import com.inditex.album.domain.mapper.AlbumMapper;
+import com.inditex.album.domain.model.AlbumApiDTO;
+import com.inditex.album.domain.port.out.AlbumApiPort;
+import com.inditex.album.infrastructure.api.AlbumApiRest;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

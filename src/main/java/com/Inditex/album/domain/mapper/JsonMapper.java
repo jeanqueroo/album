@@ -1,4 +1,4 @@
-package com.Inditex.album.domain.mapper;
+package com.inditex.album.domain.mapper;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.DeserializationFeature;

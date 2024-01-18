@@ -1,6 +1,6 @@
-package com.Inditex.album.infrastructure.config;
+package com.inditex.album.infrastructure.config;
 
-import com.Inditex.album.app.services.AlbumCommand;
+import com.inditex.album.app.services.AlbumCommand;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

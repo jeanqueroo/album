@@ -1,4 +1,4 @@
-package com.Inditex.album.domain.model;
+package com.inditex.album.domain.model;
 
 import lombok.*;
 

@@ -1,228 +1,168 @@
-{"timestamp": "2024-01-14 17:49:31.756","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Starting AlbumApplication using Java 17.0.9 with PID 24292 (D:\workspace\album\target\classes started by jeanramon.quero in D:\workspace\album)}
-{"timestamp": "2024-01-14 17:49:31.758","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
-{"timestamp": "2024-01-14 17:49:32.284","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
-{"timestamp": "2024-01-14 17:49:32.438","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 150 ms. Found 2 R2DBC repository interfaces.}
-{"timestamp": "2024-01-14 17:49:33.679","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
-{"timestamp": "2024-01-14 17:49:33.873","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 17:49:33.881","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
-{"timestamp": "2024-01-14 17:49:33.980","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
-{"timestamp": "2024-01-14 17:49:33.981","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
-{"timestamp": "2024-01-14 17:49:33.981","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 17:49:34.098","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 17:49:34.101","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 17:49:34.135","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 17:49:34.135","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5250974135}
-{"timestamp": "2024-01-14 17:49:34.137","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 17:49:34.167","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
-{"timestamp": "2024-01-14 17:49:34.168","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 3ms}
-{"timestamp": "2024-01-14 17:49:34.180","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
-{"timestamp": "2024-01-14 17:49:34.180","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 2ms}
-{"timestamp": "2024-01-14 17:49:34.185","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
-{"timestamp": "2024-01-14 17:49:34.185","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
-{"timestamp": "2024-01-14 17:49:34.185","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
-{"timestamp": "2024-01-14 17:49:34.185","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
-{"timestamp": "2024-01-14 17:49:34.185","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
-{"timestamp": "2024-01-14 17:49:34.185","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
-{"timestamp": "2024-01-14 17:49:34.185","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
-{"timestamp": "2024-01-14 17:49:34.186","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
-{"timestamp": "2024-01-14 17:49:34.187","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
-{"timestamp": "2024-01-14 17:49:34.188","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 17:49:34.641","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 8080}
-{"timestamp": "2024-01-14 17:49:34.649","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Started AlbumApplication in 3.323 seconds (process running for 4.315)}
-{"timestamp": "2024-01-14 17:49:48.438","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "","payload": Fill Database}
-{"timestamp": "2024-01-14 17:49:48.495","level": "WARN","thread": "single-1","clazz": "io.r2dbc.h2.H2Connection","transactionId": "","payload": Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only}
-{"timestamp": "2024-01-14 17:50:15.665","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "","payload": Find Albums in internal database}
-{"timestamp": "2024-01-14 18:29:11.216","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "","payload": Find Albums in internal database}
-{"timestamp": "2024-01-14 18:36:40.172","level": "INFO","thread": "main","clazz": "c.I.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": Starting AlbumControllerTest using Java 17.0.9 with PID 14496 (started by jeanramon.quero in D:\workspace\album)}
-{"timestamp": "2024-01-14 18:36:40.174","level": "INFO","thread": "main","clazz": "c.I.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": The following 1 profile is active: "integration"}
-{"timestamp": "2024-01-14 18:36:41.054","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
-{"timestamp": "2024-01-14 18:36:41.159","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 96 ms. Found 2 R2DBC repository interfaces.}
-{"timestamp": "2024-01-14 18:36:43.827","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
-{"timestamp": "2024-01-14 18:36:44.160","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 18:36:44.168","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
-{"timestamp": "2024-01-14 18:36:44.346","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
-{"timestamp": "2024-01-14 18:36:44.348","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
-{"timestamp": "2024-01-14 18:36:44.349","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 18:36:44.581","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:44.585","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:44.647","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 18:36:44.648","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5253804647}
-{"timestamp": "2024-01-14 18:36:44.650","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:44.691","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
-{"timestamp": "2024-01-14 18:36:44.696","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 11ms}
-{"timestamp": "2024-01-14 18:36:44.716","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
-{"timestamp": "2024-01-14 18:36:44.716","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 3ms}
-{"timestamp": "2024-01-14 18:36:44.725","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
-{"timestamp": "2024-01-14 18:36:44.725","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
-{"timestamp": "2024-01-14 18:36:44.725","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
-{"timestamp": "2024-01-14 18:36:44.725","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
-{"timestamp": "2024-01-14 18:36:44.725","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
-{"timestamp": "2024-01-14 18:36:44.725","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
-{"timestamp": "2024-01-14 18:36:44.725","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
-{"timestamp": "2024-01-14 18:36:44.729","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
-{"timestamp": "2024-01-14 18:36:44.735","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
-{"timestamp": "2024-01-14 18:36:44.735","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 18:36:45.360","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 49718}
-{"timestamp": "2024-01-14 18:36:45.379","level": "INFO","thread": "main","clazz": "c.I.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": Started AlbumControllerTest in 5.932 seconds (process running for 10.903)}
-{"timestamp": "2024-01-14 18:36:45.713","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "","payload": Find Albums from apiRest}
-{"timestamp": "2024-01-14 18:36:48.676","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "","payload": Find Albums in internal database}
-{"timestamp": "2024-01-14 18:36:48.829","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "","payload": Fill Database}
-{"timestamp": "2024-01-14 18:36:48.852","level": "WARN","thread": "reactor-http-nio-4","clazz": "io.r2dbc.h2.H2Connection","transactionId": "","payload": Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only}
-{"timestamp": "2024-01-14 18:36:51.656","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "","payload": Find Albums in internal database}
-{"timestamp": "2024-01-14 18:36:52.855","level": "INFO","thread": "main","clazz": "o.s.t.c.s.AnnotationConfigContextLoaderUtils","transactionId": "","payload": Could not detect default configuration classes for test class [com.Inditex.album.AlbumApplicationTests]: AlbumApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.}
-{"timestamp": "2024-01-14 18:36:52.872","level": "INFO","thread": "main","clazz": "o.s.b.t.c.SpringBootTestContextBootstrapper","transactionId": "","payload": Found @SpringBootConfiguration com.Inditex.album.AlbumApplication for test class com.Inditex.album.AlbumApplicationTests}
-{"timestamp": "2024-01-14 18:36:52.912","level": "INFO","thread": "main","clazz": "c.I.album.AlbumApplicationTests","transactionId": "","payload": Starting AlbumApplicationTests using Java 17.0.9 with PID 14496 (started by jeanramon.quero in D:\workspace\album)}
-{"timestamp": "2024-01-14 18:36:52.912","level": "INFO","thread": "main","clazz": "c.I.album.AlbumApplicationTests","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
-{"timestamp": "2024-01-14 18:36:53.144","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
-{"timestamp": "2024-01-14 18:36:53.181","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 36 ms. Found 2 R2DBC repository interfaces.}
-{"timestamp": "2024-01-14 18:36:53.446","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
-{"timestamp": "2024-01-14 18:36:53.455","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 18:36:53.456","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
-{"timestamp": "2024-01-14 18:36:53.503","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
-{"timestamp": "2024-01-14 18:36:53.504","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
-{"timestamp": "2024-01-14 18:36:53.505","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 18:36:53.546","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:53.549","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:53.559","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 18:36:53.560","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5253813560}
-{"timestamp": "2024-01-14 18:36:53.562","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:53.574","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
-{"timestamp": "2024-01-14 18:36:53.575","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 4ms}
-{"timestamp": "2024-01-14 18:36:53.584","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
-{"timestamp": "2024-01-14 18:36:53.584","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 4ms}
-{"timestamp": "2024-01-14 18:36:53.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
-{"timestamp": "2024-01-14 18:36:53.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
-{"timestamp": "2024-01-14 18:36:53.587","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
-{"timestamp": "2024-01-14 18:36:53.587","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
-{"timestamp": "2024-01-14 18:36:53.587","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
-{"timestamp": "2024-01-14 18:36:53.587","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
-{"timestamp": "2024-01-14 18:36:53.587","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
-{"timestamp": "2024-01-14 18:36:53.587","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
-{"timestamp": "2024-01-14 18:36:53.588","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
-{"timestamp": "2024-01-14 18:36:53.588","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 18:36:53.611","level": "INFO","thread": "main","clazz": "c.I.album.AlbumApplicationTests","transactionId": "","payload": Started AlbumApplicationTests in 0.734 seconds (process running for 19.133)}
-{"timestamp": "2024-01-14 18:36:53.744","level": "INFO","thread": "main","clazz": "c.I.a.i.config.AppConfigTest","transactionId": "","payload": Starting AppConfigTest using Java 17.0.9 with PID 14496 (started by jeanramon.quero in D:\workspace\album)}
-{"timestamp": "2024-01-14 18:36:53.745","level": "INFO","thread": "main","clazz": "c.I.a.i.config.AppConfigTest","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
-{"timestamp": "2024-01-14 18:36:53.946","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
-{"timestamp": "2024-01-14 18:36:53.975","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 29 ms. Found 2 R2DBC repository interfaces.}
-{"timestamp": "2024-01-14 18:36:54.225","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
-{"timestamp": "2024-01-14 18:36:54.241","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 18:36:54.242","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
-{"timestamp": "2024-01-14 18:36:54.270","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
-{"timestamp": "2024-01-14 18:36:54.273","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
-{"timestamp": "2024-01-14 18:36:54.274","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 18:36:54.299","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:54.302","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:54.314","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 18:36:54.315","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5253814315}
-{"timestamp": "2024-01-14 18:36:54.316","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 18:36:54.328","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
-{"timestamp": "2024-01-14 18:36:54.328","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 3ms}
-{"timestamp": "2024-01-14 18:36:54.335","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
-{"timestamp": "2024-01-14 18:36:54.335","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 2ms}
-{"timestamp": "2024-01-14 18:36:54.337","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
-{"timestamp": "2024-01-14 18:36:54.338","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
-{"timestamp": "2024-01-14 18:36:54.338","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
-{"timestamp": "2024-01-14 18:36:54.338","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
-{"timestamp": "2024-01-14 18:36:54.338","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
-{"timestamp": "2024-01-14 18:36:54.338","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
-{"timestamp": "2024-01-14 18:36:54.338","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
-{"timestamp": "2024-01-14 18:36:54.339","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
-{"timestamp": "2024-01-14 18:36:54.341","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
-{"timestamp": "2024-01-14 18:36:54.341","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 18:36:54.365","level": "INFO","thread": "main","clazz": "c.I.a.i.config.AppConfigTest","transactionId": "","payload": Started AppConfigTest in 0.642 seconds (process running for 19.888)}
-{"timestamp": "2024-01-14 19:34:43.186","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Starting AlbumApplication using Java 17.0.9 with PID 18588 (D:\workspace\album\target\classes started by jeanramon.quero in D:\workspace\album)}
-{"timestamp": "2024-01-14 19:34:43.194","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
-{"timestamp": "2024-01-14 19:34:44.948","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
-{"timestamp": "2024-01-14 19:34:45.407","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 450 ms. Found 2 R2DBC repository interfaces.}
-{"timestamp": "2024-01-14 19:34:48.120","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
-{"timestamp": "2024-01-14 19:34:48.516","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 19:34:48.530","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
-{"timestamp": "2024-01-14 19:34:48.748","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
-{"timestamp": "2024-01-14 19:34:48.751","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
-{"timestamp": "2024-01-14 19:34:48.753","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 19:34:49.130","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:34:49.137","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:34:49.246","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 19:34:49.248","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5257289246}
-{"timestamp": "2024-01-14 19:34:49.251","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:34:49.328","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
-{"timestamp": "2024-01-14 19:34:49.330","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 12ms}
-{"timestamp": "2024-01-14 19:34:49.361","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
-{"timestamp": "2024-01-14 19:34:49.362","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 13ms}
-{"timestamp": "2024-01-14 19:34:49.376","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
-{"timestamp": "2024-01-14 19:34:49.376","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
-{"timestamp": "2024-01-14 19:34:49.376","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
-{"timestamp": "2024-01-14 19:34:49.376","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
-{"timestamp": "2024-01-14 19:34:49.376","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
-{"timestamp": "2024-01-14 19:34:49.376","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
-{"timestamp": "2024-01-14 19:34:49.376","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
-{"timestamp": "2024-01-14 19:34:49.382","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
-{"timestamp": "2024-01-14 19:34:49.385","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
-{"timestamp": "2024-01-14 19:34:49.386","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 19:34:50.574","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 8080}
-{"timestamp": "2024-01-14 19:34:50.583","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Started AlbumApplication in 8.369 seconds (process running for 11.081)}
-{"timestamp": "2024-01-14 19:45:35.476","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Starting AlbumApplication using Java 17.0.9 with PID 22308 (D:\workspace\album\target\classes started by jeanramon.quero in D:\workspace\album)}
-{"timestamp": "2024-01-14 19:45:35.483","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
-{"timestamp": "2024-01-14 19:45:37.714","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
-{"timestamp": "2024-01-14 19:45:38.220","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 497 ms. Found 2 R2DBC repository interfaces.}
-{"timestamp": "2024-01-14 19:45:41.946","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
-{"timestamp": "2024-01-14 19:45:42.571","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 19:45:42.597","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
-{"timestamp": "2024-01-14 19:45:42.872","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
-{"timestamp": "2024-01-14 19:45:42.877","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
-{"timestamp": "2024-01-14 19:45:42.880","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 19:45:43.260","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:45:43.266","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:45:43.408","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 19:45:43.410","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5257943408}
-{"timestamp": "2024-01-14 19:45:43.417","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:45:43.525","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
-{"timestamp": "2024-01-14 19:45:43.530","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 22ms}
-{"timestamp": "2024-01-14 19:45:43.567","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
-{"timestamp": "2024-01-14 19:45:43.568","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 10ms}
-{"timestamp": "2024-01-14 19:45:43.585","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
-{"timestamp": "2024-01-14 19:45:43.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
-{"timestamp": "2024-01-14 19:45:43.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
-{"timestamp": "2024-01-14 19:45:43.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
-{"timestamp": "2024-01-14 19:45:43.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
-{"timestamp": "2024-01-14 19:45:43.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
-{"timestamp": "2024-01-14 19:45:43.586","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
-{"timestamp": "2024-01-14 19:45:43.588","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
-{"timestamp": "2024-01-14 19:45:43.597","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
-{"timestamp": "2024-01-14 19:45:43.600","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 19:45:45.990","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 8080}
-{"timestamp": "2024-01-14 19:45:46.030","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Started AlbumApplication in 11.662 seconds (process running for 14.724)}
-{"timestamp": "2024-01-14 19:46:39.037","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Starting AlbumApplication using Java 17.0.9 with PID 7476 (D:\workspace\album\target\classes started by jeanramon.quero in D:\workspace\album)}
-{"timestamp": "2024-01-14 19:46:39.044","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
-{"timestamp": "2024-01-14 19:46:41.260","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
-{"timestamp": "2024-01-14 19:46:41.865","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 587 ms. Found 2 R2DBC repository interfaces.}
-{"timestamp": "2024-01-14 19:46:45.873","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
-{"timestamp": "2024-01-14 19:46:46.476","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 19:46:46.486","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
-{"timestamp": "2024-01-14 19:46:46.767","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
-{"timestamp": "2024-01-14 19:46:46.774","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
-{"timestamp": "2024-01-14 19:46:46.778","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 19:46:47.308","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:46:47.321","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:46:47.419","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
-{"timestamp": "2024-01-14 19:46:47.421","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5258007420}
-{"timestamp": "2024-01-14 19:46:47.424","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
-{"timestamp": "2024-01-14 19:46:47.499","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
-{"timestamp": "2024-01-14 19:46:47.501","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 11ms}
-{"timestamp": "2024-01-14 19:46:47.539","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
-{"timestamp": "2024-01-14 19:46:47.540","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 8ms}
-{"timestamp": "2024-01-14 19:46:47.562","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
-{"timestamp": "2024-01-14 19:46:47.563","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
-{"timestamp": "2024-01-14 19:46:47.563","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
-{"timestamp": "2024-01-14 19:46:47.564","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
-{"timestamp": "2024-01-14 19:46:47.564","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
-{"timestamp": "2024-01-14 19:46:47.565","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
-{"timestamp": "2024-01-14 19:46:47.566","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
-{"timestamp": "2024-01-14 19:46:47.574","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
-{"timestamp": "2024-01-14 19:46:47.581","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
-{"timestamp": "2024-01-14 19:46:47.584","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
-{"timestamp": "2024-01-14 19:46:49.173","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 8080}
-{"timestamp": "2024-01-14 19:46:49.198","level": "INFO","thread": "main","clazz": "com.Inditex.album.AlbumApplication","transactionId": "","payload": Started AlbumApplication in 11.698 seconds (process running for 16.085)}
-{"timestamp": "2024-01-14 19:47:21.009","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.I.a.i.a.in.rest.AlbumController","transactionId": "53f19a28-cc11-4b50-9a15-a0d40ea13d93","payload": Fill Database}
-{"timestamp": "2024-01-14 19:47:21.684","level": "ERROR","thread": "reactor-http-nio-2","clazz": "c.I.a.app.exception.ExceptionHandler","transactionId": "53f19a28-cc11-4b50-9a15-a0d40ea13d93","payload": {"code":"E0002","errors":["albums not found."]}}
+{"timestamp": "2024-01-18 09:38:44.590","level": "INFO","thread": "main","clazz": "c.i.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": Starting AlbumControllerTest using Java 17.0.9 with PID 19592 (started by jeanramon.quero in D:\workspace\album-test\album)}
+{"timestamp": "2024-01-18 09:38:44.607","level": "INFO","thread": "main","clazz": "c.i.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": The following 1 profile is active: "integration"}
+{"timestamp": "2024-01-18 09:38:46.075","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
+{"timestamp": "2024-01-18 09:38:46.249","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 160 ms. Found 2 R2DBC repository interfaces.}
+{"timestamp": "2024-01-18 09:38:54.565","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
+{"timestamp": "2024-01-18 09:38:55.410","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:38:55.436","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
+{"timestamp": "2024-01-18 09:38:56.032","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
+{"timestamp": "2024-01-18 09:38:56.034","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
+{"timestamp": "2024-01-18 09:38:56.038","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:38:56.528","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:38:56.536","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:38:56.729","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:38:56.730","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5567136729}
+{"timestamp": "2024-01-18 09:38:56.741","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:38:56.953","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
+{"timestamp": "2024-01-18 09:38:56.955","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 59ms}
+{"timestamp": "2024-01-18 09:38:57.006","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
+{"timestamp": "2024-01-18 09:38:57.007","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 27ms}
+{"timestamp": "2024-01-18 09:38:57.027","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
+{"timestamp": "2024-01-18 09:38:57.028","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
+{"timestamp": "2024-01-18 09:38:57.028","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
+{"timestamp": "2024-01-18 09:38:57.028","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
+{"timestamp": "2024-01-18 09:38:57.029","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
+{"timestamp": "2024-01-18 09:38:57.029","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
+{"timestamp": "2024-01-18 09:38:57.030","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
+{"timestamp": "2024-01-18 09:38:57.036","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
+{"timestamp": "2024-01-18 09:38:57.050","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
+{"timestamp": "2024-01-18 09:38:57.061","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:38:59.061","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 53738}
+{"timestamp": "2024-01-18 09:38:59.079","level": "INFO","thread": "main","clazz": "c.i.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": Started AlbumControllerTest in 15.53 seconds (process running for 22.786)}
+{"timestamp": "2024-01-18 09:38:59.865","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "1deaf11d-44e2-4046-b0d9-892a4a2e8940","payload": Find Albums from apiRest}
+{"timestamp": "2024-01-18 09:39:04.534","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "e3f005e1-5ee0-4548-b931-d4e1058047ae","payload": Find Albums in internal database}
+{"timestamp": "2024-01-18 09:39:04.799","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "ff33254e-cfa1-40c8-8d0a-89fc2c99c8df","payload": Fill Database}
+{"timestamp": "2024-01-18 09:39:04.837","level": "WARN","thread": "reactor-http-nio-4","clazz": "io.r2dbc.h2.H2Connection","transactionId": "ff33254e-cfa1-40c8-8d0a-89fc2c99c8df","payload": Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only}
+{"timestamp": "2024-01-18 09:39:08.699","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "522ee50d-9933-426d-94ca-6792311c13a8","payload": Find Albums in internal database}
+{"timestamp": "2024-01-18 09:39:10.321","level": "INFO","thread": "main","clazz": "c.i.a.i.config.AppConfigTest","transactionId": "","payload": Starting AppConfigTest using Java 17.0.9 with PID 19592 (started by jeanramon.quero in D:\workspace\album-test\album)}
+{"timestamp": "2024-01-18 09:39:10.321","level": "INFO","thread": "main","clazz": "c.i.a.i.config.AppConfigTest","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
+{"timestamp": "2024-01-18 09:39:10.658","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
+{"timestamp": "2024-01-18 09:39:10.703","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 43 ms. Found 2 R2DBC repository interfaces.}
+{"timestamp": "2024-01-18 09:39:11.103","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
+{"timestamp": "2024-01-18 09:39:11.114","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:39:11.115","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
+{"timestamp": "2024-01-18 09:39:11.252","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
+{"timestamp": "2024-01-18 09:39:11.254","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
+{"timestamp": "2024-01-18 09:39:11.257","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:39:11.359","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:39:11.364","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:39:11.386","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:39:11.387","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5567151387}
+{"timestamp": "2024-01-18 09:39:11.391","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:39:11.418","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
+{"timestamp": "2024-01-18 09:39:11.420","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 7ms}
+{"timestamp": "2024-01-18 09:39:11.433","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
+{"timestamp": "2024-01-18 09:39:11.434","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 3ms}
+{"timestamp": "2024-01-18 09:39:11.438","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
+{"timestamp": "2024-01-18 09:39:11.439","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
+{"timestamp": "2024-01-18 09:39:11.439","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
+{"timestamp": "2024-01-18 09:39:11.439","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
+{"timestamp": "2024-01-18 09:39:11.439","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
+{"timestamp": "2024-01-18 09:39:11.439","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
+{"timestamp": "2024-01-18 09:39:11.439","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
+{"timestamp": "2024-01-18 09:39:11.442","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
+{"timestamp": "2024-01-18 09:39:11.448","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
+{"timestamp": "2024-01-18 09:39:11.453","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:39:11.505","level": "INFO","thread": "main","clazz": "c.i.a.i.config.AppConfigTest","transactionId": "","payload": Started AppConfigTest in 1.233 seconds (process running for 35.214)}
+{"timestamp": "2024-01-18 09:58:33.063","level": "INFO","thread": "main","clazz": "c.i.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": Starting AlbumControllerTest using Java 17.0.9 with PID 19432 (started by jeanramon.quero in D:\workspace\album-test\album)}
+{"timestamp": "2024-01-18 09:58:33.070","level": "INFO","thread": "main","clazz": "c.i.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": The following 1 profile is active: "integration"}
+{"timestamp": "2024-01-18 09:58:35.632","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
+{"timestamp": "2024-01-18 09:58:35.920","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 267 ms. Found 2 R2DBC repository interfaces.}
+{"timestamp": "2024-01-18 09:58:41.835","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
+{"timestamp": "2024-01-18 09:58:42.610","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:58:42.630","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
+{"timestamp": "2024-01-18 09:58:42.908","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
+{"timestamp": "2024-01-18 09:58:42.910","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
+{"timestamp": "2024-01-18 09:58:42.912","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:58:43.308","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:58:43.320","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:58:43.419","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:58:43.420","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5568323420}
+{"timestamp": "2024-01-18 09:58:43.425","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:58:43.498","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
+{"timestamp": "2024-01-18 09:58:43.500","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 10ms}
+{"timestamp": "2024-01-18 09:58:43.531","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
+{"timestamp": "2024-01-18 09:58:43.534","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 9ms}
+{"timestamp": "2024-01-18 09:58:43.551","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
+{"timestamp": "2024-01-18 09:58:43.552","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
+{"timestamp": "2024-01-18 09:58:43.552","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
+{"timestamp": "2024-01-18 09:58:43.553","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
+{"timestamp": "2024-01-18 09:58:43.553","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
+{"timestamp": "2024-01-18 09:58:43.553","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
+{"timestamp": "2024-01-18 09:58:43.554","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
+{"timestamp": "2024-01-18 09:58:43.560","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
+{"timestamp": "2024-01-18 09:58:43.565","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
+{"timestamp": "2024-01-18 09:58:43.566","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:58:44.707","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 51478}
+{"timestamp": "2024-01-18 09:58:44.715","level": "INFO","thread": "main","clazz": "c.i.a.i.a.i.rest.AlbumControllerTest","transactionId": "","payload": Started AlbumControllerTest in 13.496 seconds (process running for 26.251)}
+{"timestamp": "2024-01-18 09:58:45.178","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "c13a9b2c-6388-4a39-91be-0ee4a3b7113e","payload": Find Albums from apiRest}
+{"timestamp": "2024-01-18 09:58:47.865","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "d3c733b1-86a2-41b2-9a34-853af106057f","payload": Find Albums in internal database}
+{"timestamp": "2024-01-18 09:58:48.147","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "bebfe814-3b49-4973-a045-4bf02f07dc7d","payload": Fill Database}
+{"timestamp": "2024-01-18 09:58:48.186","level": "WARN","thread": "reactor-http-nio-4","clazz": "io.r2dbc.h2.H2Connection","transactionId": "bebfe814-3b49-4973-a045-4bf02f07dc7d","payload": Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only}
+{"timestamp": "2024-01-18 09:58:52.147","level": "INFO","thread": "reactor-http-nio-4","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "fd6df166-8983-49d1-989c-ddff02ef4298","payload": Find Albums in internal database}
+{"timestamp": "2024-01-18 09:58:54.465","level": "INFO","thread": "main","clazz": "c.i.a.i.config.AppConfigTest","transactionId": "","payload": Starting AppConfigTest using Java 17.0.9 with PID 19432 (started by jeanramon.quero in D:\workspace\album-test\album)}
+{"timestamp": "2024-01-18 09:58:54.466","level": "INFO","thread": "main","clazz": "c.i.a.i.config.AppConfigTest","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
+{"timestamp": "2024-01-18 09:58:54.831","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
+{"timestamp": "2024-01-18 09:58:54.879","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 47 ms. Found 2 R2DBC repository interfaces.}
+{"timestamp": "2024-01-18 09:58:55.265","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
+{"timestamp": "2024-01-18 09:58:55.280","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:58:55.281","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
+{"timestamp": "2024-01-18 09:58:55.364","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
+{"timestamp": "2024-01-18 09:58:55.366","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
+{"timestamp": "2024-01-18 09:58:55.367","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:58:55.452","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:58:55.456","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:58:55.485","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:58:55.486","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5568335486}
+{"timestamp": "2024-01-18 09:58:55.487","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:58:55.513","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
+{"timestamp": "2024-01-18 09:58:55.514","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 8ms}
+{"timestamp": "2024-01-18 09:58:55.533","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
+{"timestamp": "2024-01-18 09:58:55.534","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 8ms}
+{"timestamp": "2024-01-18 09:58:55.539","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
+{"timestamp": "2024-01-18 09:58:55.539","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
+{"timestamp": "2024-01-18 09:58:55.539","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
+{"timestamp": "2024-01-18 09:58:55.539","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
+{"timestamp": "2024-01-18 09:58:55.540","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
+{"timestamp": "2024-01-18 09:58:55.540","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
+{"timestamp": "2024-01-18 09:58:55.540","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
+{"timestamp": "2024-01-18 09:58:55.541","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
+{"timestamp": "2024-01-18 09:58:55.544","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
+{"timestamp": "2024-01-18 09:58:55.545","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:58:55.595","level": "INFO","thread": "main","clazz": "c.i.a.i.config.AppConfigTest","transactionId": "","payload": Started AppConfigTest in 1.198 seconds (process running for 37.133)}
+{"timestamp": "2024-01-18 09:59:40.379","level": "INFO","thread": "main","clazz": "com.inditex.album.AlbumApplication","transactionId": "","payload": Starting AlbumApplication using Java 17.0.9 with PID 22804 (D:\workspace\album-test\album\target\classes started by jeanramon.quero in D:\workspace\album-test\album)}
+{"timestamp": "2024-01-18 09:59:40.382","level": "INFO","thread": "main","clazz": "com.inditex.album.AlbumApplication","transactionId": "","payload": No active profile set, falling back to 1 default profile: "default"}
+{"timestamp": "2024-01-18 09:59:41.149","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.}
+{"timestamp": "2024-01-18 09:59:41.314","level": "INFO","thread": "main","clazz": "o.s.d.r.c.RepositoryConfigurationDelegate","transactionId": "","payload": Finished Spring Data repository scanning in 160 ms. Found 2 R2DBC repository interfaces.}
+{"timestamp": "2024-01-18 09:59:42.440","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Set default schema name to PUBLIC}
+{"timestamp": "2024-01-18 09:59:42.604","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:59:42.613","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Dropping Database Objects in schema: INDITEXDB.PUBLIC}
+{"timestamp": "2024-01-18 09:59:42.689","level": "INFO","thread": "main","clazz": "liquibase.database","transactionId": "","payload": Successfully deleted all supported object types in schema INDITEXDB.PUBLIC.}
+{"timestamp": "2024-01-18 09:59:42.690","level": "WARN","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Failed to release change log lock}
+{"timestamp": "2024-01-18 09:59:42.691","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:59:42.805","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Creating database history table with name: PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:59:42.808","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:59:42.840","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully acquired change log lock}
+{"timestamp": "2024-01-18 09:59:42.841","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Using deploymentId: 5568382840}
+{"timestamp": "2024-01-18 09:59:42.842","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Reading from PUBLIC.DATABASECHANGELOG}
+{"timestamp": "2024-01-18 09:59:42.863","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table ALBUM created}
+{"timestamp": "2024-01-18 09:59:42.869","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-album-table::jquero ran successfully in 9ms}
+{"timestamp": "2024-01-18 09:59:42.878","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": Table PHOTO created}
+{"timestamp": "2024-01-18 09:59:42.878","level": "INFO","thread": "main","clazz": "liquibase.changelog","transactionId": "","payload": ChangeSet db/create-schema.yml::create-photo-table::jquero ran successfully in 3ms}
+{"timestamp": "2024-01-18 09:59:42.882","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": UPDATE SUMMARY}
+{"timestamp": "2024-01-18 09:59:42.883","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Run:                          2}
+{"timestamp": "2024-01-18 09:59:42.883","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Previously run:               0}
+{"timestamp": "2024-01-18 09:59:42.883","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Filtered out:                 0}
+{"timestamp": "2024-01-18 09:59:42.883","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": -------------------------------}
+{"timestamp": "2024-01-18 09:59:42.883","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Total change sets:            2}
+{"timestamp": "2024-01-18 09:59:42.883","level": "INFO","thread": "main","clazz": "liquibase.util","transactionId": "","payload": Update summary generated}
+{"timestamp": "2024-01-18 09:59:42.885","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Update command completed successfully.}
+{"timestamp": "2024-01-18 09:59:42.886","level": "INFO","thread": "main","clazz": "liquibase.lockservice","transactionId": "","payload": Successfully released change log lock}
+{"timestamp": "2024-01-18 09:59:42.887","level": "INFO","thread": "main","clazz": "liquibase.command","transactionId": "","payload": Command execution complete}
+{"timestamp": "2024-01-18 09:59:43.346","level": "INFO","thread": "main","clazz": "o.s.b.w.e.netty.NettyWebServer","transactionId": "","payload": Netty started on port 8080}
+{"timestamp": "2024-01-18 09:59:43.355","level": "INFO","thread": "main","clazz": "com.inditex.album.AlbumApplication","transactionId": "","payload": Started AlbumApplication in 3.534 seconds (process running for 5.466)}
+{"timestamp": "2024-01-18 10:00:02.289","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "d9b0604d-ad7c-4a1b-8df7-f88e3f2970c4","payload": Find Albums in internal database}
+{"timestamp": "2024-01-18 10:00:05.547","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "df6466a8-26e8-47f1-aab8-e56d11371a9d","payload": Find Albums from apiRest}
+{"timestamp": "2024-01-18 10:00:15.849","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "5a72742b-78b8-40c9-a15b-8ea7f46268fc","payload": Fill Database}
+{"timestamp": "2024-01-18 10:00:15.864","level": "WARN","thread": "reactor-http-nio-2","clazz": "io.r2dbc.h2.H2Connection","transactionId": "5a72742b-78b8-40c9-a15b-8ea7f46268fc","payload": Option{name='readOnly', sensitive=false} + isn't supported in H2 at the transaction level. You must set it on conenction URL. See http://www.h2database.com/html/features.html#read_only}
+{"timestamp": "2024-01-18 10:00:26.659","level": "INFO","thread": "reactor-http-nio-2","clazz": "c.i.a.i.a.in.rest.AlbumController","transactionId": "85e43c36-ce71-4415-932b-df64fd186530","payload": Find Albums in internal database}

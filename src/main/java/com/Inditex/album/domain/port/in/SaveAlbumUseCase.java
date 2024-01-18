@@ -1,4 +1,4 @@
-package com.Inditex.album.domain.port.in;
+package com.inditex.album.domain.port.in;
 
 
 import reactor.core.publisher.Mono;

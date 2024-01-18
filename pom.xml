@@ -70,6 +70,25 @@
 	</dependencies>
 
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>0.8.11</version>
+					<configuration>
+						<excludes>
+							<exclude>com/inditex/album/**/ExcludedPOJO.class</exclude>
+							<exclude>com/inditex/album/**/*DTO.*</exclude>
+							<exclude>com/inditex/album/**/*Entity.*</exclude>
+							<exclude>com/inditex/album/**/*Api.*</exclude>
+							<exclude>**/config/*</exclude>
+							<exclude>**/exception/*</exclude>
+						</excludes>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -106,6 +125,24 @@
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

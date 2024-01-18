@@ -1,7 +1,7 @@
-package com.Inditex.album.infrastructure.api;
+package com.inditex.album.infrastructure.api;
 
-import com.Inditex.album.infrastructure.config.ApiProperties;
-import com.Inditex.album.infrastructure.model.PhotoApi;
+import com.inditex.album.infrastructure.config.ApiProperties;
+import com.inditex.album.infrastructure.model.PhotoApi;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;

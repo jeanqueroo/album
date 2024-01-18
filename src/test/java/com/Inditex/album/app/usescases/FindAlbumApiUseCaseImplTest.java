@@ -1,9 +1,9 @@
-package com.Inditex.album.app.usescases;
+package com.inditex.album.app.usescases;
 
-import com.Inditex.album.app.exception.NotFoundException;
-import com.Inditex.album.domain.port.out.AlbumApiPort;
-import com.Inditex.album.domain.port.out.PhotoApiPort;
-import com.Inditex.album.mock.AlbumMock;
+import com.inditex.album.app.exception.NotFoundException;
+import com.inditex.album.domain.port.out.AlbumApiPort;
+import com.inditex.album.domain.port.out.PhotoApiPort;
+import com.inditex.album.mock.AlbumMock;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

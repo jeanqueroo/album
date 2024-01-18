@@ -1,6 +1,6 @@
-package com.Inditex.album.app.exception;
+package com.inditex.album.app.exception;
 
-import com.Inditex.album.domain.mapper.JsonMapper;
+import com.inditex.album.domain.mapper.JsonMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
