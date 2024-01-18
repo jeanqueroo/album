@@ -1,9 +1,9 @@
-package com.Inditex.album.app.services;
+package com.inditex.album.app.services;
 
-import com.Inditex.album.domain.port.in.FindAlbumApiUseCase;
-import com.Inditex.album.domain.port.in.FindAlbumUseCase;
-import com.Inditex.album.domain.port.in.SaveAlbumUseCase;
-import com.Inditex.album.mock.AlbumMock;
+import com.inditex.album.domain.port.in.FindAlbumApiUseCase;
+import com.inditex.album.domain.port.in.FindAlbumUseCase;
+import com.inditex.album.domain.port.in.SaveAlbumUseCase;
+import com.inditex.album.mock.AlbumMock;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -39,7 +39,8 @@ class AlbumCommandTest {
         when(saveAlbumUseCase.saveAlbum()).thenReturn(Mono.empty());
         StepVerifier
                 .create(albumCommand.saveAlbum())
-                .expectComplete();
+                .expectComplete()
+                .verify();
         verify(saveAlbumUseCase).saveAlbum();
     }
 
@@ -49,9 +50,9 @@ class AlbumCommandTest {
         StepVerifier
                 .create(albumCommand.findAlbumsFromApi())
                 .consumeNextWith(album -> {
-                    assertEquals(album.getId(),AlbumMock.ID );
-                    assertEquals(album.getTitle(), AlbumMock.TITLE);
-                    assertEquals(album.getUserId(), AlbumMock.USER_ID);
+                    assertEquals(AlbumMock.ID, album.getId() );
+                    assertEquals(AlbumMock.TITLE, album.getTitle());
+                    assertEquals(AlbumMock.USER_ID, album.getUserId());
 
                 })
                 .verifyComplete();
@@ -64,9 +65,9 @@ class AlbumCommandTest {
         StepVerifier
                 .create(albumCommand.findAlbums())
                 .consumeNextWith(album -> {
-                    assertEquals(album.getId(),AlbumMock.ID );
-                    assertEquals(album.getTitle(), AlbumMock.TITLE);
-                    assertEquals(album.getUserId(), AlbumMock.USER_ID);
+                    assertEquals(AlbumMock.ID, album.getId() );
+                    assertEquals(AlbumMock.TITLE, album.getTitle());
+                    assertEquals(AlbumMock.USER_ID, album.getUserId());
 
                 })
                 .verifyComplete();

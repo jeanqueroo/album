@@ -1,10 +1,10 @@
-package com.Inditex.album.infrastructure.adater.out.api;
+package com.inditex.album.infrastructure.adater.out.api;
 
-import com.Inditex.album.domain.mapper.AlbumMapper;
-import com.Inditex.album.domain.mapper.AlbumMapperImpl;
-import com.Inditex.album.domain.model.AlbumApiDTO;
-import com.Inditex.album.infrastructure.api.AlbumApiRest;
-import com.Inditex.album.mock.AlbumMock;
+import com.inditex.album.domain.mapper.AlbumMapper;
+import com.inditex.album.domain.mapper.AlbumMapperImpl;
+import com.inditex.album.domain.model.AlbumApiDTO;
+import com.inditex.album.infrastructure.api.AlbumApiRest;
+import com.inditex.album.mock.AlbumMock;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -37,8 +37,8 @@ class AlbumApiAdapterTest {
         when(albumApiRest.getAlbums()).thenReturn(Flux.just(AlbumMock.getAlbumApi()));
         StepVerifier
                 .create(albumApiAdapter.getAlbums()).consumeNextWith(album -> {
-                    assertEquals(album.getId(), AlbumMock.ID );
-                    assertEquals(album.getUserId(), AlbumMock.USER_ID);
+                    assertEquals(AlbumMock.ID, album.getId() );
+                    assertEquals(AlbumMock.USER_ID, album.getUserId());
                 })
                 .verifyComplete();
         verify(albumApiRest).getAlbums();

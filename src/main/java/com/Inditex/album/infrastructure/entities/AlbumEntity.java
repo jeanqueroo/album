@@ -1,4 +1,4 @@
-package com.Inditex.album.infrastructure.entities;
+package com.inditex.album.infrastructure.entities;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;

@@ -1,13 +1,13 @@
-package com.Inditex.album.app.usescases;
+package com.inditex.album.app.usescases;
 
-import com.Inditex.album.app.exception.NotFoundException;
-import com.Inditex.album.domain.mapper.AlbumMapper;
-import com.Inditex.album.domain.port.in.SaveAlbumUseCase;
+import com.inditex.album.app.exception.NotFoundException;
+import com.inditex.album.domain.mapper.AlbumMapper;
+import com.inditex.album.domain.port.in.SaveAlbumUseCase;
 
-import com.Inditex.album.domain.port.out.AlbumApiPort;
-import com.Inditex.album.domain.port.out.AlbumRepositoryPort;
+import com.inditex.album.domain.port.out.AlbumApiPort;
+import com.inditex.album.domain.port.out.AlbumRepositoryPort;
 
-import com.Inditex.album.domain.port.out.PhotoApiPort;
+import com.inditex.album.domain.port.out.PhotoApiPort;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -36,7 +36,7 @@ public class SaveAlbumUseCaseImpl implements SaveAlbumUseCase {
                                                                      return Mono.just(albumApiDTO);
                                                                  })))
                    .flatMap(albumApiDTO ->
-                           albumRepositoryPort.saveAlbum(albumMapper.AlbumApiToAlbumDto(albumApiDTO))
+                           albumRepositoryPort.saveAlbum(albumMapper.albumApiToAlbumDto(albumApiDTO))
                    ).then();
 
     }

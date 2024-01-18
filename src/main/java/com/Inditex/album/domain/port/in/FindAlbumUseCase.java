@@ -1,6 +1,6 @@
-package com.Inditex.album.domain.port.in;
+package com.inditex.album.domain.port.in;
 
-import com.Inditex.album.domain.model.AlbumDTO;
+import com.inditex.album.domain.model.AlbumDTO;
 import reactor.core.publisher.Flux;
 
 public interface FindAlbumUseCase {

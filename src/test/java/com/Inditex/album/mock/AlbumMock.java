@@ -1,18 +1,16 @@
-package com.Inditex.album.mock;
+package com.inditex.album.mock;
 
-import com.Inditex.album.domain.model.AlbumApiDTO;
-import com.Inditex.album.domain.model.AlbumDTO;
-import com.Inditex.album.domain.model.PhotoApiDTO;
-import com.Inditex.album.infrastructure.entities.AlbumEntity;
-import com.Inditex.album.infrastructure.entities.PhotoEntity;
-import com.Inditex.album.infrastructure.model.AlbumApi;
+import com.inditex.album.domain.model.AlbumApiDTO;
+import com.inditex.album.domain.model.AlbumDTO;
+import com.inditex.album.domain.model.PhotoApiDTO;
+import com.inditex.album.infrastructure.entities.PhotoEntity;
+import com.inditex.album.infrastructure.model.AlbumApi;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 
 public class AlbumMock {
 
@@ -77,10 +75,6 @@ public class AlbumMock {
         return mapper.readValue(inputStream, PhotoApiDTO.class);
     }
 
-    public static PhotoEntity getPhotoEntity() throws IOException {
-        InputStream inputStream = AlbumMock.class.getClassLoader().getResourceAsStream("json/photo.json");
-        return mapper.readValue(inputStream, PhotoEntity.class);
-    }
 
 
 }

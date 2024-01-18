@@ -1,12 +1,12 @@
-package com.Inditex.album.infrastructure.adater.out.persistence;
+package com.inditex.album.infrastructure.adater.out.persistence;
 
-import com.Inditex.album.domain.mapper.AlbumMapper;
-import com.Inditex.album.domain.mapper.PhotoMapper;
-import com.Inditex.album.domain.model.AlbumDTO;
-import com.Inditex.album.domain.port.out.AlbumRepositoryPort;
-import com.Inditex.album.infrastructure.entities.AlbumEntity;
-import com.Inditex.album.infrastructure.repositoreis.SpringAlbumRepository;
-import com.Inditex.album.infrastructure.repositoreis.SpringPhotoRepository;
+import com.inditex.album.domain.mapper.AlbumMapper;
+import com.inditex.album.domain.mapper.PhotoMapper;
+import com.inditex.album.domain.model.AlbumDTO;
+import com.inditex.album.domain.port.out.AlbumRepositoryPort;
+import com.inditex.album.infrastructure.entities.AlbumEntity;
+import com.inditex.album.infrastructure.repositoreis.SpringAlbumRepository;
+import com.inditex.album.infrastructure.repositoreis.SpringPhotoRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
@@ -30,7 +30,7 @@ public class AlbumAdapter implements AlbumRepositoryPort {
 
         return springAlbumRepository.findById(albumDTO.getId())
                                     .switchIfEmpty(
-                                            Mono.zip(springAlbumRepository.save(albumMapper.AlbumDTOToEntity(albumDTO)),
+                                            Mono.zip(springAlbumRepository.save(albumMapper.albumDTOToEntity(albumDTO)),
                                                     springPhotoRepository.saveAll(photoMapper.dtoToPhotoEntity(albumDTO.getPhotos())).collectList()).flatMap(tuble -> {
                                                 AlbumEntity albumEntity = tuble.getT1();
                                                 albumEntity.setPhotoEntities(tuble.getT2());

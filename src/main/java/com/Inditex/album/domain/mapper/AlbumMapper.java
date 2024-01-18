@@ -1,10 +1,10 @@
-package com.Inditex.album.domain.mapper;
+package com.inditex.album.domain.mapper;
 
-import com.Inditex.album.domain.model.AlbumApiDTO;
-import com.Inditex.album.domain.model.AlbumDTO;
-import com.Inditex.album.infrastructure.config.MapStructConfig;
-import com.Inditex.album.infrastructure.entities.AlbumEntity;
-import com.Inditex.album.infrastructure.model.AlbumApi;
+import com.inditex.album.domain.model.AlbumApiDTO;
+import com.inditex.album.domain.model.AlbumDTO;
+import com.inditex.album.infrastructure.config.MapStructConfig;
+import com.inditex.album.infrastructure.entities.AlbumEntity;
+import com.inditex.album.infrastructure.model.AlbumApi;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
@@ -13,10 +13,13 @@ import org.mapstruct.Named;
 @Mapper(componentModel = "spring", config = MapStructConfig.class)
 public interface AlbumMapper {
 
-    AlbumDTO AlbumApiToAlbumDto(AlbumApiDTO albumApiDTO);
+    @Mapping(target = "photos.createAt", ignore = true)
+    @Mapping(target = "photos.createBy", ignore = true)
+    AlbumDTO albumApiToAlbumDto(AlbumApiDTO albumApiDTO);
 
     @Mapping(target = "createby", source = "createby", qualifiedByName = "setCreateBy")
-    AlbumEntity AlbumDTOToEntity(AlbumDTO albumDTO);
+    @Mapping(target = "photoEntities", ignore = true)
+    AlbumEntity albumDTOToEntity(AlbumDTO albumDTO);
 
     @Mapping(target = "photos", ignore = true)
     AlbumDTO albumEntityToDTO(AlbumEntity albumEntity);

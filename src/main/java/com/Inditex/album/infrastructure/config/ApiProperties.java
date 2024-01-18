@@ -1,4 +1,4 @@
-package com.Inditex.album.infrastructure.config;
+package com.inditex.album.infrastructure.config;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -24,6 +24,6 @@ public class ApiProperties {
     /**
      * Photos Endpoint
      */
-    private String PhotosEndpoint;
+    private String photosEndpoint;
 
 }

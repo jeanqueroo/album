@@ -1,7 +1,21 @@
 # Album-test
 `Dev. Jean Quero`
 
-Este microservicio esta desarrollado con SpringBoot y tiene 3 endpoints.
+Este microservicio está desarrollado con Spring Boot que es una herramienta que ayuda tener más rapidez a la hora de 
+crear microservicios y aplicaciones web con Spring Framework, y además nos permite:
+
+* Configuración automática. 
+* Un enfoque de configuración obstinado. 
+* La capacidad de crear aplicaciones autónomas.
+
+La arquitectura usada fue la arquitectura hexagonal, esta arquitectura fue usada porque entre una de sus beneficios nos permite aislar
+en capas, la aplicación y a si a la hora sé su mantenimiento sea más fácil como comprensible para los integrantes del equipo, 
+a si como nos ofrece mayor facilidad a la hora de hacer pruebas, ya que cada capa de negocio está separada lo que la hace más 
+flexible y escalable.
+
+
+
+El API tiene 3 endpoints.
 
 Lista de endpoints:
 
@@ -19,11 +33,10 @@ La aplicacion esta dockerizada, puede ejecutar la aplicacion siguiendo los sigui
 1. [x] 1: Posiciones en la carpeta raiz del proyecto
 2. [x] 2: Ejecute el archivo run.sh
 
-**Coverage 89%**
+**Coverage 87%**
 
 Primero Ejecute el comando
-1. `mvn test`
-2. `mvn clean install`
+1. `mvn clean  test`
 
 ![img.png](img.png)
 

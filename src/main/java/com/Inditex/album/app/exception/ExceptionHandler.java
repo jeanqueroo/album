@@ -1,4 +1,4 @@
-package com.Inditex.album.app.exception;
+package com.inditex.album.app.exception;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;

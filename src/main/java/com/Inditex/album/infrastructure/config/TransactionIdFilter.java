@@ -1,4 +1,4 @@
-package com.Inditex.album.infrastructure.config;
+package com.inditex.album.infrastructure.config;
 
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;

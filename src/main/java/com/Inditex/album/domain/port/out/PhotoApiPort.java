@@ -1,6 +1,6 @@
-package com.Inditex.album.domain.port.out;
+package com.inditex.album.domain.port.out;
 
-import com.Inditex.album.domain.model.PhotoApiDTO;
+import com.inditex.album.domain.model.PhotoApiDTO;
 import reactor.core.publisher.Flux;
 
 public interface PhotoApiPort {

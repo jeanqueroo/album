@@ -1,4 +1,4 @@
-package com.Inditex.album.infrastructure.model;
+package com.inditex.album.infrastructure.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.Inditex.album.infrastructure.adater.in.rest;
+package com.inditex.album.infrastructure.adater.in.rest;
 
-import com.Inditex.album.AlbumApplication;
+import com.inditex.album.AlbumApplication;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;

@@ -1,11 +1,10 @@
-package com.Inditex.album.app.services;
+package com.inditex.album.app.services;
 
-import com.Inditex.album.domain.model.AlbumApiDTO;
-import com.Inditex.album.domain.model.AlbumDTO;
-import com.Inditex.album.domain.port.in.FindAlbumApiUseCase;
-import com.Inditex.album.domain.port.in.FindAlbumUseCase;
-import com.Inditex.album.domain.port.in.SaveAlbumUseCase;
-import lombok.AllArgsConstructor;
+import com.inditex.album.domain.model.AlbumApiDTO;
+import com.inditex.album.domain.model.AlbumDTO;
+import com.inditex.album.domain.port.in.FindAlbumApiUseCase;
+import com.inditex.album.domain.port.in.FindAlbumUseCase;
+import com.inditex.album.domain.port.in.SaveAlbumUseCase;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

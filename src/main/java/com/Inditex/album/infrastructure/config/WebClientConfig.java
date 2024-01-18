@@ -1,4 +1,4 @@
-package com.Inditex.album.infrastructure.config;
+package com.inditex.album.infrastructure.config;
 
 import io.netty.channel.ChannelOption;
 import io.netty.handler.timeout.ReadTimeoutHandler;

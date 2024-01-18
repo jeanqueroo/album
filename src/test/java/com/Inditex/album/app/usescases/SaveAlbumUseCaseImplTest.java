@@ -1,12 +1,12 @@
-package com.Inditex.album.app.usescases;
+package com.inditex.album.app.usescases;
 
-import com.Inditex.album.app.exception.NotFoundException;
-import com.Inditex.album.domain.mapper.AlbumMapper;
-import com.Inditex.album.domain.mapper.AlbumMapperImpl;
-import com.Inditex.album.domain.port.out.AlbumApiPort;
-import com.Inditex.album.domain.port.out.AlbumRepositoryPort;
-import com.Inditex.album.domain.port.out.PhotoApiPort;
-import com.Inditex.album.mock.AlbumMock;
+import com.inditex.album.app.exception.NotFoundException;
+import com.inditex.album.domain.mapper.AlbumMapper;
+import com.inditex.album.domain.mapper.AlbumMapperImpl;
+import com.inditex.album.domain.port.out.AlbumApiPort;
+import com.inditex.album.domain.port.out.AlbumRepositoryPort;
+import com.inditex.album.domain.port.out.PhotoApiPort;
+import com.inditex.album.mock.AlbumMock;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -62,8 +62,8 @@ class SaveAlbumUseCaseImplTest {
                 .thenReturn(Flux.just(AlbumMock.getPhotoApiDTO(),AlbumMock.getPhotoApiDTO2()));
         when(photoApiPort.getPhotosByAlbumId(1))
                 .thenReturn(Flux.empty());
-        when(albumRepositoryPort.saveAlbum(albumMapper.AlbumApiToAlbumDto(AlbumMock.getAlbumApiDTO()))).thenReturn(Mono.just(AlbumMock.getAlbumDTO()));
-        when(albumRepositoryPort.saveAlbum(albumMapper.AlbumApiToAlbumDto(AlbumMock.getAlbumApiDTOWithPhotos()))).thenReturn(Mono.just(AlbumMock.getAlbumDTO()));
+        when(albumRepositoryPort.saveAlbum(albumMapper.albumApiToAlbumDto(AlbumMock.getAlbumApiDTO()))).thenReturn(Mono.just(AlbumMock.getAlbumDTO()));
+        when(albumRepositoryPort.saveAlbum(albumMapper.albumApiToAlbumDto(AlbumMock.getAlbumApiDTOWithPhotos()))).thenReturn(Mono.just(AlbumMock.getAlbumDTO()));
 
         StepVerifier
                 .create(saveAlbumUseCase.saveAlbum())
@@ -72,7 +72,7 @@ class SaveAlbumUseCaseImplTest {
         verify(albumApiPort).getAlbums();
         verify(photoApiPort).getPhotosByAlbumId(2);
         verify(photoApiPort).getPhotosByAlbumId(1);
-        verify(albumRepositoryPort).saveAlbum(albumMapper.AlbumApiToAlbumDto(AlbumMock.getAlbumApiDTO()));
-        verify(albumRepositoryPort).saveAlbum(albumMapper.AlbumApiToAlbumDto(AlbumMock.getAlbumApiDTOWithPhotos()));
+        verify(albumRepositoryPort).saveAlbum(albumMapper.albumApiToAlbumDto(AlbumMock.getAlbumApiDTO()));
+        verify(albumRepositoryPort).saveAlbum(albumMapper.albumApiToAlbumDto(AlbumMock.getAlbumApiDTOWithPhotos()));
     }
 }
